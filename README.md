@@ -1,7 +1,7 @@
-# {{title}}
+# ReadMe Generator
 
 ## Description
-{{description}}
+This is a read me generator to help developers write their read me faster and efficently, so they can focus on the project
 
 ## Table of contents
 - Installation (#installation)
@@ -12,20 +12,20 @@
 - Questions (#questions)
 
 ## Installation
-{{installation}}
+just open the terminal
 
 ## Usage
-{{usage}}
+answer each question
 
 ## License
-{{license}}
+none
 
 ## Contributing
-{{contributing}}
+andrea
 
 ## Tests
-{{tests}}
+1
 
 ## Question
-For any questioos reach out to me at {{email}}.
-My Github username is {{username}} and this is the link to my Github (https://github.com/{{username}})
+If you have any questions reach out to me at ananajak@hotmail.com.
+My Github username is anderea and this is the link to my Github (https://github.com/anderea)
