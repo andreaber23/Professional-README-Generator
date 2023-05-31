@@ -60,12 +60,12 @@ const generateReadMe = ({title, description, installation, usage, license, contr
 ${description}
 
 ## Table of contents
-- Installation (#installation)
-- Usage (#usage)
-- License (#license)
-- Contributing (#contributing)
-- Tests (#tests)
-- Questions (#questions)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
 
 ## Installation
 ${installation}
@@ -82,16 +82,19 @@ ${contributing}
 ## Tests
 ${tests}
 
-## Question
+## Questions
 If you have any questions reach out to me at ${email}.
-My Github username is ${username} and this is the link to my Github (https://github.com/${username})`;
+My Github username is ${username} and this is the link to my Github https://github.com/${username}`;
 
 
 
 // TODO: Create a function to initialize app
 const init = () => {
-    
-}
+    questions()
+    .then((answers)=> writeFile('README.md', generateReadMe(answers)))
+    .then (()=> console.log('Succesfully ReadMe generated'))
+    .catch((err) => console.error(err));
+};
 
 // Function call to initialize app
 init();
